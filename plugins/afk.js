@@ -1,5 +1,5 @@
 const {zokou} = require("../framework/zokou") ;
-const afkfunc = require("../bdd/afk") ;
+const afkfunc = require("../fonctions/afk") ;
 
 
 famous({
