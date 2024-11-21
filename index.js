@@ -985,7 +985,7 @@ ${metadata.desc}`;
 
         // fin fonctions utiles
         /** ************* */
-        return famous;
+        return zokou;
     }
     let fichier = require.resolve(__filename);
     fs.watchFile(fichier, () => {
