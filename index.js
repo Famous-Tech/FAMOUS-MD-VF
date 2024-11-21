@@ -771,7 +771,7 @@ ${metadata.desc}`;
                             zk.sendMessage(crons[i].group_id, { image: { url: './media/chrono.webp' }, caption: "Coucou c'est l'heure de fermer le groupe ; sayonnara " });
 
                         }, {
-                            timezone: "Africa/Abidjan"
+                            timezone: "America/Port-au-Prince"
                         });
                     }
 
@@ -829,13 +829,13 @@ ${metadata.desc}`;
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("le bot est en ligne 🕸\n\n");
+                console.log("le bot est en ligne !🕸\n\n");
                 //chargement des commandes
                 console.log("chargement des commandes ...\n");
-                fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
+                fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/commandes/" + fichier);
+                            require(__dirname + "/plugins/" + fichier);
                             console.log(fichier + " installé ✔️");
                         } catch (e) {
                             console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);

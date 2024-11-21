@@ -1,12 +1,12 @@
 const { famous } = require("../framework/famous");
 const { Sticker, StickerTypes } = require('wa-sticker-formatter');
-const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../bdd/antilien");
-const {atbajouterOuMettreAJourJid,atbverifierEtatJid,atbmettreAJourAction} = require("../bdd/antibot");
+const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../fonctions/antilien");
+const {atbajouterOuMettreAJourJid,atbverifierEtatJid,atbmettreAJourAction} = require("../fonctions/antibot");
 const { search, download } = require("aptoide-scraper");
 const axios = require('axios');
 const fs = require("fs-extra");
 //const { uploadImageToImgur } = require('../framework/imgur');
-const { recupevents } = require('../bdd/welcome');
+const { recupevents } = require('../fonctions/welcome');
 const {exec}=require("child_process") ;
 
 
@@ -26,7 +26,7 @@ famous({ nomCom: "appel", categorie: "Groupe", reaction: "📣" }, async (dest, 
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        📞 *Hacking-Md* 📞
+        📞 *FAMOUS-MD* 📞
 ========================\n
 👥 Groupe : ${nomGroupe} 🚀 
 👤 Auteur : *${nomAuteurMessage}* 👋 
@@ -288,7 +288,7 @@ famous({ nomCom: "retirer", categorie: "Groupe", reaction: "👨🏿‍💼" }, 
             if (admin == false) {
               const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif"
               var sticker = new Sticker(gifLink, {
-                pack: 'Hacking-Md', // The pack name
+                pack: 'FAMOUS-MD', // The pack name
                 author: nomAuteurMessage, // The author name
                 type: StickerTypes.FULL, // The sticker type
                 categories: ['🤩', '🎉'], // The sticker category
@@ -909,7 +909,7 @@ famous({ nomCom: "apk", reaction: "✨", categorie: "Recherche" }, async (dest, 
 
 /*******************************  automute && autoummute ***************************/
 
-const cron = require(`../bdd/cron`) ;
+const cron = require(`../fonctions/cron`) ;
 
 
 famous({
@@ -1101,7 +1101,7 @@ famous({
 
   if(!verifAdmin) { repondre('Desoler vous pouvez pas autoriser les contenues nsfw sans etre administrateur du groupe') ; return}
 
-      let hbd = require('../bdd/hentai') ;
+      let hbd = require('../fonctions/hentai') ;
 
     let isHentaiGroupe = await hbd.checkFromHentaiList(dest) ;
 
