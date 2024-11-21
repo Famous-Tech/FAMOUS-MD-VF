@@ -6,33 +6,33 @@
   
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=HACKING LE ROBOT+RÉVOLUTIONNE;MULTI+SERVICE+WHATSAPP+BOT;CRÉER+PAR+THOMAS+TECH;DATE+de+publication+06.6.2024" alt="Typing SVG" /></a>
   </p>
-    <img alt="HACKING-MD" width="700" height="300" src="https://telegra.ph/file/ac3a8142e8e18bcabb75b.jpg">
+    <img alt="FAMOUS-MD" width="700" height="300" src="https://telegra.ph/file/ac3a8142e8e18bcabb75b.jpg">
 <p align="center">
 <p align="center">
 
 
- ## HACKING-MD : le robot multi-appareils qui révolutionne vos conversations WhatsApp
+ ## FAMOUS-MD : le robot multi-appareils qui révolutionne vos conversations WhatsApp
 
-**Imaginez un assistant personnel qui vous accompagne dans toutes vos conversations WhatsApp.** Un assistant capable de gérer vos fichiers, d'interagir avec des autocollants et de faciliter la gestion de vos groupes. Cet assistant, c'est HACKING-MD.
+**Imaginez un assistant personnel qui vous accompagne dans toutes vos conversations WhatsApp.** Un assistant capable de gérer vos fichiers, d'interagir avec des autocollants et de faciliter la gestion de vos groupes. Cet assistant, c'est FAMOUS-MD.
 
-**HACKING-MD est bien plus qu'un simple robot.** C'est un véritable compagnon qui vous fera gagner du temps et vous simplifiera la vie. Voici quelques exemples de ce qu'il peut faire pour vous :
+**FAMOUS-MD est bien plus qu'un simple robot.** C'est un véritable compagnon qui vous fera gagner du temps et vous simplifiera la vie. Voici quelques exemples de ce qu'il peut faire pour vous :
 
-* **Gérer vos fichiers :** Envoyez et recevez des fichiers de toutes sortes, y compris des documents, des images et des vidéos. HACKING-MD s'occupe de tout pour vous, de la compression à l'envoi.
-* **Interagir avec des autocollants :** HACKING-MD comprend vos émotions et sait comment les exprimer avec des autocollants amusants et pertinents. Il vous suffit de lui dire ce que vous ressentez et il trouvera le sticker parfait pour l'occasion.
-* **Faciliter la gestion de vos groupes :** HACKING-MD peut vous aider à gérer vos groupes WhatsApp de manière efficace. Il peut ajouter ou supprimer des membres, modifier les noms et les descriptions des groupes, et même envoyer des messages à tous les membres en même temps.
+* **Gérer vos fichiers :** Envoyez et recevez des fichiers de toutes sortes, y compris des documents, des images et des vidéos. FAMOUS-MD s'occupe de tout pour vous, de la compression à l'envoi.
+* **Interagir avec des autocollants :** FAMOUS-MD comprend vos émotions et sait comment les exprimer avec des autocollants amusants et pertinents. Il vous suffit de lui dire ce que vous ressentez et il trouvera le sticker parfait pour l'occasion.
+* **Faciliter la gestion de vos groupes :** FAMOUS-MD peut vous aider à gérer vos groupes WhatsApp de manière efficace. Il peut ajouter ou supprimer des membres, modifier les noms et les descriptions des groupes, et même envoyer des messages à tous les membres en même temps.
 
-**HACKING-MD est un outil indispensable pour tous ceux qui utilisent WhatsApp.** Il vous fera gagner du temps, vous simplifiera la vie et rendra vos conversations plus agréables.
+**FAMOUS-MD est un outil indispensable pour tous ceux qui utilisent WhatsApp.** Il vous fera gagner du temps, vous simplifiera la vie et rendra vos conversations plus agréables.
 
-**N'attendez plus, installez HACKING-MD dès aujourd'hui !**
+**N'attendez plus, installez FAMOUS-MD dès aujourd'hui !**
 
-**Voici quelques autres avantages de HACKING-MD :**
+**Voici quelques autres avantages de FAMOUS-MD :**
 
-* **Disponible sur tous les appareils :** HACKING-MD est compatible avec tous les appareils, y compris les smartphones, les tablettes et les ordinateurs.
-* **Facile à utiliser :** HACKING-MD est très facile à utiliser, même pour les personnes qui ne sont pas familiarisées avec les robots.
-* **Personnalisable :** Vous pouvez personnaliser HACKING-MD en fonction de vos besoins.
-* **Gratuit :** HACKING-MD est entièrement gratuit.
+* **Disponible sur tous les appareils :** FAMOUS-MD est compatible avec tous les appareils, y compris les smartphones, les tablettes et les ordinateurs.
+* **Facile à utiliser :** FAMOUS-MD est très facile à utiliser, même pour les personnes qui ne sont pas familiarisées avec les robots.
+* **Personnalisable :** Vous pouvez personnaliser FAMOUS-MD en fonction de vos besoins.
+* **Gratuit :** FAMOUS-MD est entièrement gratuit.
 
-**HACKING-MD est le robot multi-appareils qui révolutionne vos conversations WhatsApp.** Installez-le dès aujourd'hui et découvrez toutes ses fonctionnalités !
+**FAMOUS-MD est le robot multi-appareils qui révolutionne vos conversations WhatsApp.** Installez-le dès aujourd'hui et découvrez toutes ses fonctionnalités !
 
 ## OBTENIR HACKING SESSION_ID 
 
@@ -47,7 +47,7 @@
 ## DEPLOYMENT 
 - **déploiement sur heroku**
   1. si vous ne disposez pas de compte **heroku** cliquez [**ici create**](https://id.heroku.com/login) pour vous en procurer un .
-  2.  cliquez [**ici heroku**](https://dashboard.heroku.com/new?template=https://github.com/HACKING995/HACKING-MD89) pour deployer le bot sur **heroku**
+  2.  cliquez [**ici heroku**](https://dashboard.heroku.com/new?template=https://github.com/HACKING995/FAMOUS-MD89) pour deployer le bot sur **heroku**
 
 - **Déploiement sur Koyeb**
   1. si vous n'avez pas de compte **koyeb** cliquez [**ici**](https://dashboard.koyeb.com/signup) pour vous en procurer un .
@@ -69,6 +69,5 @@ Profitez des fonctionnalités variées du Bot WhatsApp HACKING pour améliorer v
 
 ## Developpeur :
  
-  [**Thomas**](https://chat.whatsapp.com/CmrAOrFSBMi4eXW8xL5UHZ)<br>
-  [**᚛MD-HACKER ᚜**](https://wa.me/22588697148)
+  [**FAMOUS-TECH**](https://wa.me/50943782508)<br>
  
