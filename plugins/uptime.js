@@ -17,7 +17,7 @@ const runtime = function (seconds) {
  } 
 
 
-famous({ nomCom: 'dispo',
+famous({ nomCom: 'uptime',
     desc: 'To check runtime',
     Categorie: 'Général',
     reaction: '⚙️', 
@@ -28,7 +28,7 @@ famous({ nomCom: 'dispo',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_𝑼𝒑𝒕𝒊𝒎𝒆 𝒐𝒇  𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐌𝐃: ${runtime(process.uptime())}_*`) 
+                 await repondre(`𝑼𝒑𝒕𝒊𝒎𝒆 𝒅𝒆 𝑭𝑨𝑴𝑶𝑼𝑺-𝑴𝑫: ${runtime(process.uptime())}`) 
 
    
 
@@ -47,7 +47,7 @@ famous({ nomCom: 'capt',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-    if (!arg || arg.length === 0) return repondre("provide a link...");
+    if (!arg || arg.length === 0) return repondre("SVP Veuillezme fournir un lien pour que je puisse donner la capture d\'écran");
 
          const linkk = arg.join(' ');
 
@@ -57,7 +57,7 @@ let linkkk = `https://api.screenshotmachine.com/?key=c04d3a&url=${encodeURICompo
 
 let res = await getBuffer(linkkk);
 
-await zk.sendMessage(dest, { image: res, caption: '𝑾𝒆𝒃 𝑺𝒄𝒓𝒆𝒆𝒏𝒔𝒉𝒐𝒕 𝒃𝒚 * 𝐇𝐀𝐂𝐊𝐈𝐍𝐆 𝐌𝐃*'}, { quoted: ms });
+await zk.sendMessage(dest, { image: res, caption: '𝑾𝒆𝒃 𝑺𝒄𝒓𝒆𝒆𝒏𝒔𝒉𝒐𝒕 𝒃𝒚 *𝑭𝑨𝑴𝑶𝑼𝑺-𝑴𝑫*'}, { quoted: ms });
 
 
 }
