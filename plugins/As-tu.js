@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const BaseUrl = 'https://gifted-apis-third-30b2fdbb9819.herokuapp.com';
 const giftedapikey = 'giftedtechk'; // Utilisation de la clé API fournie
 

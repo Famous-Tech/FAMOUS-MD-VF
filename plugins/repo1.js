@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const fetch = require('node-fetch'); // Assurez-vous d'avoir la bibliothèque fetch
 
 // Commande pour récupérer les informations du dépôt

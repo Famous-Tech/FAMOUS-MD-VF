@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const BaseUrl = 'https://api.giftedtech.my.id';
 const giftedapikey = '_0x5aff35,_0x1876r'; // Utilisation de la clé API fournie
 

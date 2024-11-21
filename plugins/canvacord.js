@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const canvacord = require("canvacord");
 const {uploadImageToImgur} = require("../framework/imgur")
 

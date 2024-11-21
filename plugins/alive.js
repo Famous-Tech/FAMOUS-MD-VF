@@ -1,5 +1,5 @@
 const { zokou } = require('../framework/zokou');
-const {addOrUpdateDataInAlive , getDataFromAlive} = require('../bdd/alive')
+const {addOrUpdateDataInAlive , getDataFromAlive} = require('../fonctions/alive')
 const moment = require("moment-timezone");
 const s = require(__dirname + "/../set");
 

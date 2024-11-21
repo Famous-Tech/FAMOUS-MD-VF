@@ -1,4 +1,4 @@
-const {zokou} = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const conf = require("../set");
 const {getMessagesAndXPByJID,getBottom10Users} = require("../bdd/level");
 

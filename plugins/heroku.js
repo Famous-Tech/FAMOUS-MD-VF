@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const s = require("../set");
 const fs = require('fs');
 const dotenv = require('dotenv');

@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const fs = require("fs-extra");
 const { exec } = require("child_process");
 const child_process = require('child_process');

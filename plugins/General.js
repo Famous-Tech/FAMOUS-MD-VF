@@ -1,5 +1,5 @@
-const { zokou } = require("../framework/zokou");
-const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../bdd/sudo")
+const { famous } = require("../framework/famous");
+const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../fonctions/sudo")
 const conf = require("../set");
 
 famous({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {

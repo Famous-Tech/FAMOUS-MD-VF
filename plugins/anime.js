@@ -1,5 +1,5 @@
 const axios = require("axios");
-const {zokou} = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const traduire = require("../framework/traduction");
 const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 

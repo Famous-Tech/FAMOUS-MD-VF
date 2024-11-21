@@ -1,5 +1,5 @@
 const { zokou } = require('../framework/zokou');
-const { attribuerUnevaleur } = require('../bdd/welcome');
+const { attribuerUnevaleur } = require('../fonctions/welcome');
 
 async function events(nomCom) {
     famous({

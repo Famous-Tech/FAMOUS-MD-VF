@@ -1,5 +1,4 @@
-const { zokou } = require("../framework/zokou");
-//const { getGroupe } = require("../bdd/groupe");
+const { famous } = require("../framework/famous");
 const { Sticker, StickerTypes } = require('wa-sticker-formatter');
 const {ajouterOuMettreAJourJid,mettreAJourAction,verifierEtatJid} = require("../bdd/antilien");
 const {atbajouterOuMettreAJourJid,atbverifierEtatJid,atbmettreAJourAction} = require("../bdd/antibot");

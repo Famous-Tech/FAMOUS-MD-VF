@@ -1,6 +1,6 @@
 const axios = require("axios");
 const { Sticker, StickerTypes } = require("wa-sticker-formatter");
-const {zokou} = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 
 famous({
   nomCom: "stickersearch",

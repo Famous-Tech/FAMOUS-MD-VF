@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 
 const BaseUrl = 'https://api.giftedtechnexus.co.ke';
 const downloadUrl = 'https://api.giftedtechnexus.co.ke/api/download/xnxxdl';

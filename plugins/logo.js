@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 var mumaker = require("mumaker");
 famous({ nomCom: "hacker",
     categorie: "Logo", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {

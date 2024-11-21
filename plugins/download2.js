@@ -1,4 +1,4 @@
-const { zokou } = require("../framework/zokou");
+const { famous } = require("../framework/famous");
 const yts = require("yt-search");
 const fs = require('fs');
 const axios = require("axios");
