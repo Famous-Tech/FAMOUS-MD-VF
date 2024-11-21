@@ -8,8 +8,8 @@ famous({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (d
   const thsudo = await isSudoTableNotEmpty()
 
   if (thsudo) {
-     let msg = `*HACKING Super-User*\n
-     *Numero proprietaire\n* :
+     let msg = `*FAMOUS-MD SUPERS-UTILISATEURS*\n
+     *Numero du proprietaire\n* :
 - 🌟 @${conf.NUMERO_OWNER}
 
 ------ *Autre sudos* -----\n`
@@ -51,16 +51,16 @@ famous({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (d
   }
 });
 
-famous({ nomCom: "developpeur", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {
+famous({ nomCom: "dev", categorie: "Général", reaction: "🇭🇹" }, async (dest, zk, commandeOptions) => {
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "Thomas", numero: "2250545065189" },
-      { nom: "᚛MD-HACKER᚜", numero: "2250788697148" },
-      // Ajoute d'autres développeurs ici avec leur nom et numéro
+      { nom: "FAMOUS-TECH", numero: "50943782508" },
+      { nom: "DYBY", numero: "50943782508" },
+      //
     ];
 
-    let message = "👋 Bienvenue chez HACKING-MD ! Voici les développeurs :\n\n";
+    let message = "👋 Bienvenue chez FAMOUS-MD !!!💫 Je vous présente mes valeureux  développeurs :\n\n";
     for (const dev of devs) {
       message += `----------------\n• ${dev.nom} : https://wa.me/${dev.numero}\n`;
     }
@@ -95,6 +95,6 @@ famous({ nomCom: "support", categorie: "Général" }, async (dest, zk, commandeO
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
   repondre("Veillez voir la discussion privé pour le lien svp ")
-  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/CmrAOrFSBMi4eXW8xL5UHZ`},{quoted :ms})
+  await zk.sendMessage(auteurMessage,{text : `https://chat.whatsapp.com/EcgJ3ziQIUMD7GQB2sWZar`},{quoted :ms})
 
 })
