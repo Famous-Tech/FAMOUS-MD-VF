@@ -4,7 +4,7 @@ const { famous } = require("../framework/famous");
 const fetch = require('node-fetch'); // Assurez-vous d'avoir la bibliothèque fetch
 
 // Commande pour récupérer les informations du dépôt
-famous({ nomCom: "repo1", catégorie: "Général", reaction: "🌏", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
+famous({ nomCom: "repo", catégorie: "Général", reaction: "🌏", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
   const githubRepo = 'https://api.github.com/repos/Famous-Tech/FAMOUS-MD-VF;
   const img = 'https://files.catbox.moe/6yegga.jpg';
 
