@@ -51,6 +51,8 @@ const { recupevents } = require('./fonctions/welcome');
 let { reagir } = require(__dirname + "/framework/app");
 var session = conf.session.replace("FAMOUS-MD", "");
 const prefixe = conf.PREFIXE;
+const zk = makeWASocket((sockOptions));
+
 
 async function authentification() {
     try {
@@ -75,7 +77,7 @@ setTimeout(() => {
     async function main() {
         const { version, isLatest } = await (0, baileys_1.fetchLatestBaileysVersion)();
         const { state, saveCreds } = await (0, baileys_1.useMultiFileAuthState)(__dirname + "/auth");
-        const sockOptions = {
+        const  sockOptions = {
             version,
             logger: pino({ level: "silent" }),
             browser: ['FAMOUS-MD', "safari", "1.0.0"],
