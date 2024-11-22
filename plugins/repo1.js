@@ -5,8 +5,8 @@ const fetch = require('node-fetch'); // Assurez-vous d'avoir la bibliothèque fe
 
 // Commande pour récupérer les informations du dépôt
 famous({ nomCom: "repo1", catégorie: "Général", reaction: "🌏", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
-  const githubRepo = 'https://api.github.com/repos/HACKING995/HACKING--MD9';
-  const img = 'https://telegra.ph/file/b9a0855b3741a8b62a796.jpg';
+  const githubRepo = 'https://api.github.com/repos/Famous-Tech/FAMOUS-MD-VF;
+  const img = 'https://files.catbox.moe/6yegga.jpg';
 
   try {
     // Récupération des données du dépôt
@@ -27,10 +27,10 @@ famous({ nomCom: "repo1", catégorie: "Général", reaction: "🌏", nomFichier:
       // Message à envoyer
       const gitdata = `
 *VOICI VOTRE NOUVEAU QR SCANNEUR ET PAIR CODE* 
-🔗 https://qr-wp-piratage.onrender.com/
+🔗 https://à-venir.com/
 
 *C'est le QR code*
-🔗 https://pairing-mdv3.onrender.com
+🔗 https://
 
 *Pair code*
 
@@ -39,9 +39,9 @@ famous({ nomCom: "repo1", catégorie: "Général", reaction: "🌏", nomFichier:
 🧧 *FORKS:* ${repoInfo.forks}
 📅 *RELEASE DATE:* ${releaseDate}
 🕐 *LAST UPDATE:* ${repoInfo.lastUpdate}
-👨‍💻 *OWNER:* *Thomas*
+👨‍💻 *OWNER:* *FAMOUS-TECH*
 __________________________________
-            *Made With* Thomas`;
+            *FAMOUS-TECH*`;
 
       // Envoi du message avec l'image
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
