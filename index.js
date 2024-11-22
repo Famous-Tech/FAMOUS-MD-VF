@@ -45,12 +45,11 @@ let evt = require(__dirname + "/framework/famous");
 const { isUserBanned, addUserToBanList, removeUserFromBanList } = require("./fonctions/banUser");
 const { addGroupToBanList, isGroupBanned, removeGroupFromBanList } = require("./fonctions/banGroup");
 const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList } = require("./fonctions/onlyAdmin");
-//const { constrainedMemory } = require("process");
 //const { co } = require("translatte/languages");
 const { recupevents } = require('./fonctions/welcome');
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/FAMOUS-MD;;;, "");
+var session = conf.session.replace(FAMOUS-MD;;;, "");
 const prefixe = conf.PREFIXE;
 
 async function authentification() {
