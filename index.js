@@ -32,7 +32,7 @@ const logger = logger_1.default.child({});
 logger.level = 'silent';
 const pino = require("pino");
 const boom_1 = require("@hapi/boom");
-const conf = require("./set");
+const conf = require("./config");
 const axios = require("axios");
 let fs = require("fs-extra");
 let path = require("path");
@@ -105,7 +105,7 @@ setTimeout(() => {
             }
             ///////
         };
-        const famous = (0, baileys_1.default)(sockOptions);
+        const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
         setInterval(() => { store.writeToFile(__dirname + "/store.json"); }, 3000);
 
