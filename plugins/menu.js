@@ -1,23 +1,20 @@
 const util = require('util');
 const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
+const { famous } = require(__dirname + "/../framework/famous");
 const { format } = require(__dirname + "/../framework/mesfonctions");
 const os = require("os");
 const moment = require("moment-timezone");
-const s = require(__dirname + "/../set");
+const s = require(__dirname + "/../config");
 
-zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
+famous({ nomCom: "menu", categorie: "Général" }, async (dest, zk, commandeOptions) => {
+    let { ms, repondre, prefixe, nomAuteurMessage, mybotpic } = commandeOptions;
+    let { cm } = require(__dirname + "/../framework/famous");
     var coms = {};
     var mode = "public";
     
     if ((s.MODE).toLocaleLowerCase() != "yes") {
         mode = "private";
     }
-
-
-    
 
     cm.map(async (com, index) => {
         if (!coms[com.categorie])
@@ -27,94 +24,85 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 
     moment.tz.setDefault('Etc/GMT');
 
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
+    const temps = moment().format('HH:mm:ss');
+    const date = moment().format('DD/MM/YYYY');
 
-  let infoMsg =  `
-╭────✧${s.BOT }✧────◆
-𝗛𝗔𝗖𝗞𝗜𝗡𝗚-𝗠𝗗 𝗕𝗢𝗧 𝗡𝗘𝗪 𝗩𝗘𝗥𝗦𝗜𝗢𝗡
+    let infoMsg = `
+╭────✧${s.BOT}✧────◆
+𝗙𝗔𝗠𝗢𝗨𝗦-𝗠𝗗 𝑽1
      ╭──────────────
-|❏│   _Préfix_ : ${s.PREFIXE}
-|❏│   _Proprio_ : ${s.OWNER_NAME}
+|❏│   *_Préfixe_* : ${s.PREFIXE}
+|❏│   *_Propriétaire_* : ${s.OWNER_NAME}
 |❏│   _Mode_ : ${mode}
-|❏│   _Commands_ : ${cm.length}
-|❏│   _Date_ : ${date}
-|❏│   _Heure_ : ${temps}
-|❏│   _Mémoire_ : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-|❏│   _Plateforme_ : ${os.platform()}
-|❏│   _Développer_ : 𝗧𝗛𝗢𝗠𝗔𝗦
-|❏│  & 𝗠𝗗-𝗛𝗔𝗖𝗞𝗘𝗥
-|❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝7.2
+|❏│   *_Commandes_* : ${cm.length}
+|❏│   *_Date_* : ${date}
+|❏│   *_Heure_* : ${temps}
+|❏│   *_RAM_* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+|❏│   *_Plateforme_* : ${os.platform()}
+|❏│   *_Développeur_* : *FAMOUS-TECH*
+|❏│   *_PAYS_ : HAÏTI*
+|❏|    𝘃𝗲𝗿𝘀𝗶𝗼𝗻    : 𝘝1.0.0
     ╰───────────────
-╰─────✧THO-BOT✧─────◆ \n\n`;
+╰─────✧𝗙𝗔𝗠𝗢𝗨𝗦-𝗠𝗗✧─────◆ \n\n`;
     
+    let menuMsg = `
+👋 Salut ${nomAuteurMessage}, je te présente le menu de FAMOUS-MD 👋
 
-let menuMsg = `
-👋 Hello how are you ${nomAuteurMessage} 👋
-
-*Liste des commandes de HACKING-MD:*
+*Liste des commandes de FAMOUS-MD:*
 ◇                             ◇
 `;
 
-// Vérifier si une catégorie spécifique est sélectionnée
-if (commandeOptions.categorie) {
-    const categorieSelectionnee = commandeOptions.categorie;
-    if (coms[categorieSelectionnee]) {
-        menuMsg += `╭────💯${categorieSelectionnee} ❏ ✧────`;
-        for (const cmd of coms[categorieSelectionnee]) {
+    if (commandeOptions.categorie) {
+        const categorieSelectionnee = commandeOptions.categorie;
+        if (coms[categorieSelectionnee]) {
+            menuMsg += `╭────💫${categorieSelectionnee} ❏ ✧────`;
+            for (const cmd of coms[categorieSelectionnee]) {
+                menuMsg += `
+*|🇭🇹│ ${cmd}*`;
+            }
             menuMsg += `
-*|❏│ ${cmd}*`;
-        }
-        menuMsg += `
 ╰═════════════⊷\n`;
-    } else {
-        menuMsg += `La catégorie "${categorieSelectionnee}" n'existe pas.\n`;
-    }
-} else {
-    for (const cat in coms) {
-        menuMsg += `╭────💯${cat} ❏ ✧────`;
-        for (const cmd of coms[cat]) {
-            menuMsg += `
-*|❏│ ${cmd}*`;
+        } else {
+            menuMsg += `La catégorie "${categorieSelectionnee}" n'existe pas.\n`;
         }
-        menuMsg += `
+    } else {
+        for (const cat in coms) {
+            menuMsg += `╭────💫${cat} ❏ ✧────`;
+            for (const cmd of coms[cat]) {
+                menuMsg += `
+*|🇭🇹│ ${cmd}*`;
+            }
+            menuMsg += `
 ╰═════════════⊷ \n`;
+        }
     }
-}
 
-menuMsg += `
+    menuMsg += `
 ◇            ◇
 *»»————— ★ —————««*
-"Mettre la commande, et insérez ${prefixe} tu like et la commande_nom."
+"Pour utiliser une commande, insérez ${prefixe} suivi du nom de la commande."
  
-    *Support by HACKING-MD* 
-   Voici mon lien 𝗬𝗼𝘂𝘁𝘂𝗯𝗲:"https://youtube.com/@KouameDjakiss?si=k2HqPPSmHBZe3ABd"                                          
+    *𝑫é𝒗𝒆𝒍𝒐𝒑𝒑é 𝒑𝒂𝒓 𝑭𝑨𝑴𝑶𝑼𝑺-𝑻𝑬𝑪𝑯*
 *»»—————    ★   —————««*
 `;
 
-var lien = mybotpic();
+    var lien = mybotpic();
 
-if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Hacking-MD*, développé par Thomas+" , gifPlayback : true }, { quoted: ms });
+    if (lien.match(/\.(mp4|gif)$/i)) {
+        try {
+            zk.sendMessage(dest, { video: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *Famous-MD*, développé par FAMOUS-TECH" , gifPlayback : true }, { quoted: ms });
+        } catch (e) {
+            console.log("🥵🥵 Menu erreur " + e);
+            repondre("🥵🥵 Menu erreur " + e);
+        }
+    } else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+        try {
+            zk.sendMessage(dest, { image: { url: lien }, caption: infoMsg + menuMsg, footer: "Je suis *Famous-MD*, développé par FAMOUS-TECH" }, { quoted: ms });
+        } catch (e) {
+            console.log("🥵🥵 Menu erreur " + e);
+            repondre("🥵🥵 Menu erreur " + e);
+        }
+    } else {
+        repondre(infoMsg + menuMsg);
     }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Hacking-MD*, développé par Thomas+" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    repondre(infoMsg + menuMsg);
-}
 });
