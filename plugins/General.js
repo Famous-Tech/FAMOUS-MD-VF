@@ -1,6 +1,6 @@
 const { famous } = require("../framework/famous");
 const {getAllSudoNumbers,isSudoTableNotEmpty} = require("../fonctions/sudo")
-const conf = require("../set");
+const conf = require("../config");
 
 famous({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (dest, zk, commandeOptions) => {
     const { ms , mybotpic } = commandeOptions;
@@ -10,7 +10,7 @@ famous({ nomCom: "proprio", categorie: "Général", reaction: "💞" }, async (d
   if (thsudo) {
      let msg = `*FAMOUS-MD SUPERS-UTILISATEURS*\n
      *Numero du proprietaire\n* :
-- 🌟 @${conf.NUMERO_OWNER}
+- 💫 @${conf.NUMERO_OWNER}
 
 ------ *Autre sudos* -----\n`
      
@@ -56,7 +56,7 @@ famous({ nomCom: "dev", categorie: "Général", reaction: "🇭🇹" }, async (d
 
     const devs = [
       { nom: "FAMOUS-TECH", numero: "50943782508" },
-      { nom: "DYBY", numero: "50943782508" },
+      { nom: "DYBY", numero: "50941774216" },
       //
     ];
 
