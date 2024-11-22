@@ -105,7 +105,7 @@ setTimeout(() => {
             }
             ///////
         };
-        const zk = (0, baileys_1.default)(sockOptions);
+        const zokou = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
         setInterval(() => { store.writeToFile(__dirname + "/store.json"); }, 3000);
 
@@ -788,7 +788,7 @@ ${metadata.desc}`;
 
 
                         }, {
-                            timezone: "Africa/Abidjan"
+                            timezone: "America/Port-au-Prince"
                         });
                     }
 
