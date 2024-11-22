@@ -50,7 +50,7 @@ const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList 
 const { recupevents } = require('./fonctions/welcome');
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/FAMOUS-MD;;;=>/g, "");
+var session = conf.session.replace(/FAMOUS-MD;;;/g, "");
 const prefixe = conf.PREFIXE;
 
 async function authentification() {
