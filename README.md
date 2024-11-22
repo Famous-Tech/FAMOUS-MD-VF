@@ -4,7 +4,7 @@
 
 ***
   
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=FAMOUS-MD-VF LE ROBOT+RÉVOLUTIONNE;MULTI+APPAREIL+WHATSAPP+BOT;CRÉER+PAR+FAMOUS-+TECH;DATE+de+publication+21.11.2024" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=1BAFBAFF&center=true&width=910&height=100&lines=FAMOUS+-MD+ LE ROBOT+RÉVOLUTIONNE;MULTI+APPAREIL+WHATSAPP+BOT;CRÉER+PAR+FAMOUS-+TECH;DATE+de+publication+21.11.2024" alt="Typing SVG" /></a>
   </p>
     <img alt="FAMOUS-MD" width="700" height="300" src="https://files.catbox.moe/6yegga.jpg">
 <p align="center">
