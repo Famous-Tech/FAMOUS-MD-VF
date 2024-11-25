@@ -50,7 +50,7 @@ const { isGroupOnlyAdmin, addGroupToOnlyAdminList, removeGroupFromOnlyAdminList 
 const { recupevents } = require('./fonctions/welcome');
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace("FAMOUS-MD", "");
+var session = conf.session.replace("FAMOUS-MD;;;", "");
 const prefixe = conf.PREFIXE;
 const zk = makeWASocket((sockOptions));
 
