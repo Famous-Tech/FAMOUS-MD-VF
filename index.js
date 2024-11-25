@@ -52,7 +52,7 @@ const { recupevents } = require('./fonctions/welcome');
 let { reagir } = require(__dirname + "/framework/app");
 var session = conf.session.replace("FAMOUS-MD;;;", "");
 const prefixe = conf.PREFIXE;
-const zk = makeWASocket((sockOptions));
+const zk = makeWASocket();
 
 
 async function authentification() {
