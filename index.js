@@ -724,7 +724,7 @@ ${metadata.desc}`;
         };
         // fin fonctions utiles
         return zk;
-    }, 5000);
+    } 5000);
 let fichier = require.resolve(__filename);
 fs.watchFile(fichier, () => {
     fs.unwatchFile(fichier);
